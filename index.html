@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fatima Kasenally</title>
-<meta name="description" content="Fatima Kasenally — DPhil candidate in Statistics at the University of Oxford, working on causal inference and instrumental variables.">
+<meta name="description" content="Fatima Kasenally — DPhil Candidate in Statistics at the University of Oxford, specializing in causal inference, instrumental variables, and statistical machine learning.">
 <style>
   :root {
     --bg: #ffffff;
@@ -23,14 +23,6 @@
       --accent: #e0907f;
       --card: #1d2025;
     }
-  }
-  :root[data-theme="dark"] {
-    --bg: #16181c;
-    --fg: #e8e6e3;
-    --muted: #a2a09d;
-    --rule: #2e3238;
-    --accent: #e0907f;
-    --card: #1d2025;
   }
   * { box-sizing: border-box; }
   body {
@@ -51,25 +43,27 @@
     border: 1px solid var(--rule); flex: none;
   }
   .ident { flex: 1 1 320px; min-width: 260px; }
-  h1 { font-size: 2rem; margin: 0 0 6px; letter-spacing: -0.01em; }
-  .role { color: var(--muted); margin: 0 0 14px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .role { color: var(--muted); margin: 0 0 14px; font-size: 1.05rem; }
   .links { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 0.93rem; }
   .links a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
   .links a:hover { border-bottom-color: var(--accent); }
 
   h2 {
     font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em;
-    color: var(--muted); font-weight: 600; margin: 52px 0 18px;
+    color: var(--muted); font-weight: 600; margin: 48px 0 18px;
     padding-bottom: 8px; border-bottom: 1px solid var(--rule);
     font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
   }
   p { margin: 0 0 16px; }
-  a { color: var(--accent); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
 
-  .paper { margin: 0 0 26px; }
-  .paper .t { font-weight: 600; display: block; margin-bottom: 3px; }
+  .paper { margin: 0 0 24px; }
+  .paper .t { font-weight: 600; display: block; margin-bottom: 3px; font-size: 1.05rem; }
   .paper .meta { color: var(--muted); font-size: 0.93rem; }
   .paper .abs { font-size: 0.95rem; margin-top: 8px; color: var(--fg); }
+  
   details summary {
     cursor: pointer; color: var(--accent); font-size: 0.9rem;
     font-family: system-ui, -apple-system, sans-serif; margin-top: 6px;
@@ -77,7 +71,11 @@
   details[open] summary { margin-bottom: 8px; }
 
   ul { margin: 0 0 16px; padding-left: 20px; }
-  li { margin-bottom: 7px; }
+  li { margin-bottom: 8px; }
+  
+  .talk-group { margin-bottom: 20px; }
+  .talk-title { font-weight: 600; font-style: italic; margin-bottom: 6px; display: block; }
+
   .tag {
     display: inline-block; font-size: 0.72rem; letter-spacing: 0.06em;
     text-transform: uppercase; padding: 2px 8px; border-radius: 3px;
@@ -108,68 +106,76 @@
         <a href="mailto:fatima.kasenally@stats.ox.ac.uk">Email</a>
         <a href="cv.pdf">CV</a>
         <a href="https://github.com/FZK98">GitHub</a>
-        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/fatima-kasenally">LinkedIn</a>
       </div>
     </div>
   </header>
 
-  <h2>About</h2>
-  <p>I am a final-year DPhil student in the <a href="https://www.stats.ox.ac.uk/">Department of Statistics</a> at the University of Oxford, supervised by Frank Windmeijer.</p>
-  <p>My research is in causal inference with instrumental variables. I work on robust and efficient estimation, on tests that let applied researchers check whether their instruments are doing what they assume, and on machine learning methods for selecting valid instruments automatically. Much of this is motivated by the two-sample and summary-data settings that arise in Mendelian randomisation, where the outcome and the exposure are measured in different samples and only summary statistics are available.</p>
-  <p>Before Oxford I completed an MSc in Statistics and Operational Research at the University of Edinburgh and a BSc in Physics at Imperial College London.</p>
-  <p>I am on the job market in 2026&ndash;27, looking for postdoctoral and research positions in econometrics, statistics and causal inference.</p>
+  <h2>About Me</h2>
+  <p>I am a final-year DPhil student in the <a href="https://www.stats.ox.ac.uk/">Department of Statistics</a> at the University of Oxford, supervised by <a href="https://www.stats.ox.ac.uk/people/frank-windmeijer">Professor Frank Windmeijer</a>.</p>
+  <p>My research focuses on modern causal inference, instrumental variable (IV) estimation, and statistical machine learning. Specifically, I develop robust estimation frameworks, efficiency-improving estimators, and specification tests (such as weak-instrument and overidentification diagnostics) for high-dimensional and two-sample/summary-data settings. I am particularly interested in leveraging machine learning techniques for consistent, valid instrument selection and high-precision post-selection inference.</p>
+  <p>Prior to Oxford, I completed an MSc in Statistics &amp; Operational Research at the University of Edinburgh and a BSc (Hons) in Physics at Imperial College London.</p>
 
-  <h2>Research</h2>
+  <h2>Working Papers &amp; Preprints</h2>
 
   <div class="paper">
-    <span class="t">Two-Sample IV: Efficient Two-Step Estimation and Tests for Overidentification and Weak Instruments</span>
-    <span class="meta">with Ruoxi Guan and Frank Windmeijer <span class="tag">Working paper</span></span>
-    <details>
-      <summary>Abstract</summary>
-      <div class="abs">
-        <p>Two-sample IV is a popular estimation method when the outcome and treatment variables are available in different samples, whereas instruments are available in both samples. The standard estimator is the two-sample two-stage least squares estimator, which is efficient under homoskedasticity and homogeneity of the samples.</p>
-        <p>We develop a robust two-step procedure for efficient estimation under general heteroskedasticity and heterogeneity of the samples, and propose a related two-sample Hansen overidentification test. A key feature of our approach is that only summary statistics from the linear regressions of the reduced form and first stage in the two samples are needed.</p>
-        <p>We further show that the first-stage F-statistic in the treatment sample can be used as a test for weak instruments in the standard way under homoskedasticity and homogeneity, and propose an extension of the effective F-statistic of Montiel Olea and Pflueger (2013) for the heteroskedastic case. We illustrate the estimators and tests in an application studying the effect of education on voting behaviour from Marshall (2019), with cluster-robust inference.</p>
-      </div>
-    </details>
+    <span class="t">Two-Sample IV: Efficient Two-Step Estimation with Tests for Overidentification and Weak-Instruments</span>
+    <span class="meta">Fatima Kasenally, Ruoxi Guan, Frank Windmeijer (2026) <span class="tag">Preprint</span> &middot; <a href="https://arxiv.org/abs/2606.20240">[arXiv]</a></span>
   </div>
 
   <div class="paper">
-    <span class="t">Valid Instrument Selection in the Two-Sample Setting</span>
-    <span class="meta"><span class="tag">Work in progress</span></span>
-    <div class="abs">A generalisation of the Confidence Interval method for selecting valid instrumental variables (CIIV) to the two-sample regime, robustified to heteroskedasticity and heterogeneity between samples. Draft available on request.</div>
+    <span class="t">Generalised CIIV Selection for Two-Sample Regimes</span>
+    <span class="meta">Fatima Kasenally <span class="tag">Working Paper</span></span>
   </div>
 
   <div class="paper">
-    <span class="t">Autonomous Model Selection for Valid Instrument Identification via Unsupervised Learning</span>
-    <span class="meta"><span class="tag">Work in progress</span></span>
-    <div class="abs">An autonomous model selection framework that treats instrument validity as a clustering problem, using unsupervised learning algorithms and distance metrics designed for the IV setting to separate valid from invalid instruments without user-specified tuning. Draft available on request.</div>
+    <span class="t">Autonomous Model Selection via Unsupervised Learning for Valid IV Identification</span>
+    <span class="meta">Fatima Kasenally <span class="tag">Working Paper</span></span>
   </div>
 
-  <h2>Talks</h2>
+  <h2>Selected Talks &amp; Presentations</h2>
+
+  <div class="talk-group">
+    <span class="talk-title">Two-Sample IV: Efficient Two-Step Estimation and Specification Testing</span>
+    <ul>
+      <li><strong>Bristol Econometrics Study Group (BESG)</strong> | July 2026 &mdash; <a href="https://www.econometricstudygroup.org/">[Conference]</a></li>
+      <li><strong>International Association for Applied Econometrics (IAAE)</strong> | June 2026 &mdash; <a href="https://iaae2026.pages.dev/">[Conference]</a></li>
+      <li><strong>Econometrics Workshop</strong>, Department of Economics, Oxford | April 2026</li>
+    </ul>
+  </div>
+
+  <div class="talk-group">
+    <span class="talk-title">A Generalised Distance Metric Approach for Valid Instrumental Variable Selection</span>
+    <ul>
+      <li><strong>Isaac Newton Institute (INI) Causal Inference Workshop</strong> (Poster) | June 2026 &mdash; <a href="https://www.newton.ac.uk/event/cifw04/">[Workshop]</a></li>
+      <li><strong>European Causal Inference Meeting (EuroCIM)</strong> (Poster) | April 2026 &mdash; <a href="https://eurocim.org/oxford-2026/">[Conference]</a></li>
+    </ul>
+  </div>
+
+  <div class="talk-group">
+    <span class="talk-title">Two-Sample GMM Estimation and Overidentification Testing</span>
+    <ul>
+      <li><strong>Causal Inference Reading Group</strong>, Oxford | February 2026</li>
+      <li><strong>Young Statistician Seminar</strong> (Invited Talk) | November 2025</li>
+      <li><strong>Third Year PhD Presentation</strong>, Department of Statistics, Oxford | November 2025</li>
+      <li><strong>Econometrics Research Group Seminar</strong>, Department of Statistics, Oxford | October 2025</li>
+    </ul>
+  </div>
+
+  <h2>Academic Service</h2>
   <ul>
-    <li>International Association for Applied Econometrics (IAAE) Annual Conference, 2026</li>
-    <li>Econometrics Study Group, University of Bristol, 2026</li>
-    <li>European Causal Inference Meeting (EuroCIM), 2026</li>
-    <li>Causal Inference Workshop, Isaac Newton Institute, Cambridge, 2026</li>
+    <li><strong>Conference Reviewer:</strong> European Causal Inference Meeting (EuroCIM 2026)</li>
+    <li><strong>Outreach Officer:</strong> Mathematical Institute, University of Oxford (2023&ndash;Present)</li>
+    <li><strong>Committee Member:</strong> OxWoCS Committee (2026&ndash;2027), Departmental Committee Representative</li>
   </ul>
 
   <h2>Teaching</h2>
   <ul>
-    <li><strong>Simulation and Statistical Programming</strong> &mdash; Department of Statistics, Oxford</li>
-    <li><strong>Foundations of Statistical Inference</strong> &mdash; Department of Statistics, Oxford</li>
-    <li><strong>Statistics</strong> &mdash; Exeter College, Oxford, and Williams College</li>
-    <li><strong>Financial Mathematics</strong> &mdash; Department of Economics, Oxford</li>
-    <li><strong>Mathematics</strong> &mdash; Mathematical Institute, Oxford</li>
-    <li><strong>Machine Learning</strong> &mdash; Oxford University Computer Science Society</li>
-  </ul>
-
-  <h2>Service</h2>
-  <ul>
-    <li>Conference organiser, EuroCIM 2026</li>
-    <li>Outreach Officer, Mathematical Institute, 2023&ndash;present</li>
-    <li>Committee, Oxford Women in Computer Science, 2026&ndash;27</li>
-    <li>Departmental committee representative; Green Team; Events Team, Department of Statistics</li>
+    <li><strong>Financial Econometrics</strong> &mdash; <a href="https://www.economics.ox.ac.uk/september-summer-school">Economics Summer School</a>, Department of Economics, Oxford</li>
+    <li><strong>Introductory Machine Learning Workshop</strong> (2026) &mdash; <a href="https://girlswhoml.com/Our_courses/">GirlsWhoML</a></li>
+    <li><strong>Simulation and Statistical Programming</strong> (2023&ndash;2026) &mdash; Department of Statistics, Oxford</li>
+    <li><strong>Statistics Tutor</strong> (2024&ndash;2025) &mdash; <a href="https://exeter.williams.edu/">Williams-Exeter Programme at Oxford (WEPO)</a></li>
+    <li><strong>Foundations of Statistical Inference</strong> (2024&ndash;2025) &mdash; Department of Statistics, Oxford</li>
   </ul>
 
   <footer>
