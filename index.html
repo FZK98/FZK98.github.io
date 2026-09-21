@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fatima Kasenally</title>
+<meta name="description" content="Fatima Kasenally — DPhil candidate in Statistics at the University of Oxford, working on causal inference and instrumental variables.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5c5c5c;
+    --rule: #e2e2e2;
+    --accent: #7b2d26;
+    --card: #fafafa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #16181c;
+      --fg: #e8e6e3;
+      --muted: #a2a09d;
+      --rule: #2e3238;
+      --accent: #e0907f;
+      --card: #1d2025;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #16181c;
+    --fg: #e8e6e3;
+    --muted: #a2a09d;
+    --rule: #2e3238;
+    --accent: #e0907f;
+    --card: #1d2025;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 16px 96px; }
+
+  header { display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap; }
+  .photo {
+    width: 128px; height: 128px; border-radius: 50%;
+    object-fit: cover; background: var(--card);
+    border: 1px solid var(--rule); flex: none;
+  }
+  .ident { flex: 1 1 320px; min-width: 260px; }
+  h1 { font-size: 2rem; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .role { color: var(--muted); margin: 0 0 14px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 0.93rem; }
+  .links a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+  .links a:hover { border-bottom-color: var(--accent); }
+
+  h2 {
+    font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--muted); font-weight: 600; margin: 52px 0 18px;
+    padding-bottom: 8px; border-bottom: 1px solid var(--rule);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  p { margin: 0 0 16px; }
+  a { color: var(--accent); }
+
+  .paper { margin: 0 0 26px; }
+  .paper .t { font-weight: 600; display: block; margin-bottom: 3px; }
+  .paper .meta { color: var(--muted); font-size: 0.93rem; }
+  .paper .abs { font-size: 0.95rem; margin-top: 8px; color: var(--fg); }
+  details summary {
+    cursor: pointer; color: var(--accent); font-size: 0.9rem;
+    font-family: system-ui, -apple-system, sans-serif; margin-top: 6px;
+  }
+  details[open] summary { margin-bottom: 8px; }
+
+  ul { margin: 0 0 16px; padding-left: 20px; }
+  li { margin-bottom: 7px; }
+  .tag {
+    display: inline-block; font-size: 0.72rem; letter-spacing: 0.06em;
+    text-transform: uppercase; padding: 2px 8px; border-radius: 3px;
+    background: var(--card); border: 1px solid var(--rule); color: var(--muted);
+    font-family: system-ui, -apple-system, sans-serif; vertical-align: 2px;
+    margin-left: 8px;
+  }
+  footer {
+    margin-top: 64px; padding-top: 18px; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: 0.85rem;
+  }
+  @media (max-width: 560px) {
+    .wrap { padding-top: 36px; }
+    h1 { font-size: 1.6rem; }
+    .photo { width: 96px; height: 96px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img class="photo" src="photo.jpg" alt="Fatima Kasenally">
+    <div class="ident">
+      <h1>Fatima Kasenally</h1>
+      <p class="role">DPhil Candidate in Statistics<br>University of Oxford</p>
+      <div class="links">
+        <a href="mailto:fatima.kasenally@stats.ox.ac.uk">Email</a>
+        <a href="cv.pdf">CV</a>
+        <a href="https://github.com/FZK98">GitHub</a>
+        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <h2>About</h2>
+  <p>I am a final-year DPhil student in the <a href="https://www.stats.ox.ac.uk/">Department of Statistics</a> at the University of Oxford, supervised by Frank Windmeijer.</p>
+  <p>My research is in causal inference with instrumental variables. I work on robust and efficient estimation, on tests that let applied researchers check whether their instruments are doing what they assume, and on machine learning methods for selecting valid instruments automatically. Much of this is motivated by the two-sample and summary-data settings that arise in Mendelian randomisation, where the outcome and the exposure are measured in different samples and only summary statistics are available.</p>
+  <p>Before Oxford I completed an MSc in Statistics and Operational Research at the University of Edinburgh and a BSc in Physics at Imperial College London.</p>
+  <p>I am on the job market in 2026&ndash;27, looking for postdoctoral and research positions in econometrics, statistics and causal inference.</p>
+
+  <h2>Research</h2>
+
+  <div class="paper">
+    <span class="t">Two-Sample IV: Efficient Two-Step Estimation and Tests for Overidentification and Weak Instruments</span>
+    <span class="meta">with Ruoxi Guan and Frank Windmeijer <span class="tag">Working paper</span></span>
+    <details>
+      <summary>Abstract</summary>
+      <div class="abs">
+        <p>Two-sample IV is a popular estimation method when the outcome and treatment variables are available in different samples, whereas instruments are available in both samples. The standard estimator is the two-sample two-stage least squares estimator, which is efficient under homoskedasticity and homogeneity of the samples.</p>
+        <p>We develop a robust two-step procedure for efficient estimation under general heteroskedasticity and heterogeneity of the samples, and propose a related two-sample Hansen overidentification test. A key feature of our approach is that only summary statistics from the linear regressions of the reduced form and first stage in the two samples are needed.</p>
+        <p>We further show that the first-stage F-statistic in the treatment sample can be used as a test for weak instruments in the standard way under homoskedasticity and homogeneity, and propose an extension of the effective F-statistic of Montiel Olea and Pflueger (2013) for the heteroskedastic case. We illustrate the estimators and tests in an application studying the effect of education on voting behaviour from Marshall (2019), with cluster-robust inference.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="paper">
+    <span class="t">Valid Instrument Selection in the Two-Sample Setting</span>
+    <span class="meta"><span class="tag">Work in progress</span></span>
+    <div class="abs">A generalisation of the Confidence Interval method for selecting valid instrumental variables (CIIV) to the two-sample regime, robustified to heteroskedasticity and heterogeneity between samples. Draft available on request.</div>
+  </div>
+
+  <div class="paper">
+    <span class="t">Autonomous Model Selection for Valid Instrument Identification via Unsupervised Learning</span>
+    <span class="meta"><span class="tag">Work in progress</span></span>
+    <div class="abs">An autonomous model selection framework that treats instrument validity as a clustering problem, using unsupervised learning algorithms and distance metrics designed for the IV setting to separate valid from invalid instruments without user-specified tuning. Draft available on request.</div>
+  </div>
+
+  <h2>Talks</h2>
+  <ul>
+    <li>International Association for Applied Econometrics (IAAE) Annual Conference, 2026</li>
+    <li>Econometrics Study Group, University of Bristol, 2026</li>
+    <li>European Causal Inference Meeting (EuroCIM), 2026</li>
+    <li>Causal Inference Workshop, Isaac Newton Institute, Cambridge, 2026</li>
+  </ul>
+
+  <h2>Teaching</h2>
+  <ul>
+    <li><strong>Simulation and Statistical Programming</strong> &mdash; Department of Statistics, Oxford</li>
+    <li><strong>Foundations of Statistical Inference</strong> &mdash; Department of Statistics, Oxford</li>
+    <li><strong>Statistics</strong> &mdash; Exeter College, Oxford, and Williams College</li>
+    <li><strong>Financial Mathematics</strong> &mdash; Department of Economics, Oxford</li>
+    <li><strong>Mathematics</strong> &mdash; Mathematical Institute, Oxford</li>
+    <li><strong>Machine Learning</strong> &mdash; Oxford University Computer Science Society</li>
+  </ul>
+
+  <h2>Service</h2>
+  <ul>
+    <li>Conference organiser, EuroCIM 2026</li>
+    <li>Outreach Officer, Mathematical Institute, 2023&ndash;present</li>
+    <li>Committee, Oxford Women in Computer Science, 2026&ndash;27</li>
+    <li>Departmental committee representative; Green Team; Events Team, Department of Statistics</li>
+  </ul>
+
+  <footer>
+    Department of Statistics, University of Oxford &middot;
+    <a href="mailto:fatima.kasenally@stats.ox.ac.uk">fatima.kasenally@stats.ox.ac.uk</a>
+  </footer>
+
+</div>
+</body>
+</html>
