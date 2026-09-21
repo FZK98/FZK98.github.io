@@ -16,10 +16,10 @@ redirect_from:
 
 ## About Me
 
+I am a final-year PhD student in Statistics at the University of Oxford, working on modern causal inference, instrumental variable (IV) methods, and statistical machine learning. My research focuses on building flexible, data-adaptive methodologies and distribution-free hypothesis tests for complex observational settings, with special attention given to addressing invalid instrument selection, two-sample regimes, and high-dimensional data environments.
 
-I am a final-year PhD student in Statistics at the University of Oxford, specializing in modern causal inference, instrumental variable (IV) methods, and statistical machine learning. My research focuses on developing robust estimation frameworks and novel hypothesis tests for high-dimensional and non-standard settings, specifically targeting invalid instrument identification and two-sample regimes.
 
-Before Oxford, I completed an MSc in Statistics & Operational Research at Edinburgh and a BSc (Hons) in  Physics at Imperial College London. I enjoy blending statistical theory with practical and efficient computational tools.
+Before Oxford, I completed an MSc in Statistics & Operational Research at Edinburgh and a BSc (Hons) in  Physics at Imperial College London.
 
 
 
