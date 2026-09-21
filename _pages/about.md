@@ -1,17 +1,16 @@
 ---
 permalink: /
-title: "About"
+title: "Fatima Kasenally"
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
-# Fatima Kasenally
 **PhD Candidate in Statistics | University of Oxford**  
 *Causal Inference • Instrumental Variables • Computational Statistics • Optimization*
 
-[Email](mailto:fatima.kasenally@stats.ox.ac.uk) | [LinkedIn](https://www.linkedin.com/in/fatima-k-2b1a9a1a2/) | [GitHub](https://github.com/FZK98) | [Download CV](/files/cv.pdf)
+[Email](mailto:fatima.kasenally@stats.ox.ac.uk) \| [LinkedIn](https://www.linkedin.com/in/fatima-k-2b1a9a1a2/) \| [GitHub](https://github.com/FZK98) \| [Download CV](/files/cv.pdf)
 
 ---
 
@@ -20,7 +19,7 @@ redirect_from:
 
 I am a final-year PhD student in Statistics at the University of Oxford, specializing in modern causal inference, instrumental variable (IV) methods, and statistical machine learning. My research focuses on developing robust estimation frameworks and novel hypothesis tests for high-dimensional and non-standard settings, specifically targeting invalid instrument identification and two-sample regimes.
 
-Before Oxford, I completed an MSc in Statistics & Operational Research at Edinburgh and a BSc (hons) in  Physics at Imperial College London. Across my work, I enjoy blending statistical theory with practical and efficient computational tools.
+Before Oxford, I completed an MSc in Statistics & Operational Research at Edinburgh and a BSc (Hons) in  Physics at Imperial College London. Across my work, I enjoy blending statistical theory with practical and efficient computational tools.
 
 
 
@@ -60,10 +59,10 @@ Instrumental Variable Selection
     A Generalised Distance Metric Approach for Valid
 Instrumental Variable Selection
 
-* **Causal Inference Reading Group (Oxford)** | February 2026  
-* **Young Statistician Seminar** (Invited Talk) | November 2025  
-* **Third Year PhD Departmental Presentation (Dept. of Statistics)** | November 2025  
-* **Econometrics Research Group Seminar (Dept. of Statistics)** | October 2025  
+* **Causal Inference Reading Group (Oxford)** \| February 2026
+* **Young Statistician Seminar** (Invited Talk) \| November 2025
+* **Third Year PhD Departmental Presentation (Dept. of Statistics)** \| November 2025
+* **Econometrics Research Group Seminar (Dept. of Statistics)** \| October 2025
 
 
 
